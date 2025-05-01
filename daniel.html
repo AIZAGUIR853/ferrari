@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+
+.fot {
+	position: fixed;
+	background-color: #000;
+	height: 120px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+
+}
+video-container {
+	 width: 100%;
+	 height: 600px;
+	 
+	 overflow: hidden;
+	 box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Sombra opcional */
+	 margin-top: 150px;
+ }
+
+ .video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+ }
+
+ /* Opcional: contenido sobre el video */
+ .content {
+	 position: relative;
+	 z-index: 1;
+	 color: white;
+	 text-align: center;
+	 padding: 20px;
+	 text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+ }
+</style>
+</head>
+
+<body>
+<div class="fot">
+  <table width="80%" height="121" border="0">
+    <tr>
+      <td width="12%"><img src="logotipo.png"  height="100px" align="middle" /></td>
+      <td width="23%" class="AUTOS"> <div align="center"><a href="autos.html" class="AUTOS">Autos</a></div></td>
+      <td width="25%" class="AUTOS"><div align="center"><a href="promociones.html" class="AUTOS">Promociones</a></div></td>
+      <td width="26%" class="AUTOS"><div align="center"><a href="ubicaciones.html" class="AUTOS">Ubicacion</a></div></td>
+      <td width="14%"><div align="center"><a href="https://www.instagram.com/"><img src="Instagram_logo_2022.svg.png"  height="30" /></a><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><img src="2021_Facebook_icon.svg.png" height="30" /></a><a href="https://x.com/?lang=es"><img src="unnamed.png"  height="30" /></a></div></td>
+    </tr>
+  </table>
+
+</div>
+
+<!-- Este es el DIV del video de fondo -->
+<div class="video-container">
+ <!-- Reemplaza 'tu-video.mp4' con la ruta de tu video -->
+ 	<video class="video-background" autoplay muted loop>
+		 <source src="video.mp4" type="video/mp4">
+	 Tu navegador no soporta videos HTML5.
+	 </video>
+
+	 <!-- Contenido opcional sobre el video -->
+
+</div>
+<!-- TERMINA EL DIV del video de fondo -->
+
+</body>
+</html>

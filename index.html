@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Documento sin título</title>
 <style type="text/css">
-}
+
 .izaguirre {
 	background-color: #000;
-	position: fixed;
 	height: 120px;
 	width: 100%;
 	left: 0px;
@@ -28,24 +28,81 @@
 	width: 100%;
 	left: 0px;
 	top: 0px;
+	z-index: 1000;
+
+}
+video-container {
+	 width: 100%;
+	 height: 600px;
+	 position: relative;
+	 overflow: hidden;
+	 box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Sombra opcional */
+	 margin-top: 150px;
+ }
+
+ .video-background {
+
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+ }
+
+ /* Opcional: contenido sobre el video */
+ .content {
+	 position: relative;
+	 z-index: 1;
+	 color: white;
+	 text-align: center;
+	 padding: 20px;
+	 text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+ }
+body,td,th {
+	color: #0F0;
+}
+.IMAGEN {
+	color: #F9F9F9;
+	background-image: url(BBB.jpg);
+	height: 120px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
 }
 </style>
 </head>
 
 <body>
 <div class="fot">
-  <table width="80%" height="121" border="0">
+  <table width="83%" height="121" border="0">
     <tr>
-      <td width="13%"><img src="logotipo.png"  height="100px" align="middle" /></td>
-      <td width="35%" class="AUTOS"> <div align="center">Autos</div></td>
-      <td width="30%" class="AUTOS"><div align="center">Promociones</div></td>
-      <td width="13%" class="AUTOS"><div align="center">Ubicacion</div></td>
-      <td width="9%"><div align="center"><a href="https://www.instagram.com/"><img src="Instagram_logo_2022.svg.png"  height="30" /></a><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><img src="2021_Facebook_icon.svg.png" height="30" /></a><a href="https://x.com/?lang=es"><img src="unnamed.png"  height="30" /></a></div></td>
+      <td width="5%">
+        <img src="logo caballo.png" height="70px" align="right" />
+      <td width="31%" class="AUTOS"> <div align="center"><a href="autos.html" class="AUTOS">Autos</a></div></td>
+      <td width="25%" class="AUTOS"><div align="center"><a href="promociones.html" class="AUTOS">Promociones</a></div></td>
+      <td width="21%" class="AUTOS"><div align="center"><a href="ubicaciones.html" class="AUTOS">Ubicacion</a></div></td>
+      <td width="14%"><div align="center"><a href="https://www.instagram.com/"><img src="Instagram_logo_2022.svg.png"  height="30" /></a><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><img src="2021_Facebook_icon.svg.png" height="30" /></a><a href="https://x.com/?lang=es"><img src="unnamed.png"  height="30" /></a></div></td>
     </tr>
   </table>
 
 </div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+<!-- Este es el DIV del video de fondo -->
+<div class="video-container">
+ <!-- Reemplaza 'tu-video.mp4' con la ruta de tu video -->
+  <video class="video-background" autoplay muted loop>
+		 <source src="video.mp4" type="video/mp4">
+	 Tu navegador no soporta videos HTML5.
+  </video>
+
+<!-- Contenido opcional sobre el video --></div>
+<div>
+  <table width="100%" border="0" align="center">
+    <tr>
+      <td><img src="BBB.jpg" width="1920" height="1080" /></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+ </div>
 </body>
 </html>
